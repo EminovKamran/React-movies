@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["node_modules", "dist", "build"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "import", "jsx-a11y"],
+  "rules": {
+    "indent": ["error", 2],
+    "max-len": ["error", { "code": 120 }],
+    "linebreak-style": [0, "unix"],
+    "quotes": ["error", "single"],
+    "jsx-quotes": [2, "prefer-single"],
+    "semi": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0,
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/label-has-associated-control": 0,
+    "import/no-named-as-default": 0,
+    "import/default": 0,
+    "import/no-named-as-default-member": 0,
+    "import/namespace": 0,
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/order": [
+      2,
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "settings": {
+    "version": "detect",
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", "png"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}

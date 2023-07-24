@@ -1,0 +1,72 @@
+img {
+    width: 183px;
+    Height: 281px
+}
+
+.card {
+    display: flex;
+    width: 451px;
+    box-shadow: 0 4px 12px 0 #00000026;
+}
+
+.card__item {
+    list-style-type: none;
+    padding: 5px 0 0 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.card__title {
+    font-size: 20px;
+    color: #000000;
+    font-family: Ayuthaya, sans-serif;
+    width: 90%;
+}
+
+.card__overview {
+    font-size: 12px;
+    font-family: Ayuthaya, sans-serif;
+    color: #000000;
+}
+
+.card__release-date {
+    color: #827E7E;
+    font-size: 13px;
+    font-family: Ayuthaya, sans-serif;
+}
+
+.genre {
+    display: flex;
+    column-gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.genre__item {
+    color: rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 2px;
+    padding: 3px;
+    background: aliceblue;
+}
+
+.card__header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card__rating {
+    border-radius: 50%;
+    border: 3px solid;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
